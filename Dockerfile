@@ -6,4 +6,4 @@ RUN /androguard/install.sh
 USER app
 WORKDIR /home/app/androguard
 
-ENTRYPOINT ["androlyze.py", "-s"]
+CMD ["./androlyze.py", "-s"]

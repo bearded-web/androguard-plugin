@@ -16,7 +16,8 @@ pip install simhash elfesteem requests yara ipython \
       http://sourceforge.net/projects/pyfuzzy/files/latest/download\?source\=files#pyfuzzy-0.1.0 \
       git+git://github.com/ahupp/python-magic
 
-wget -qO- http://www.chilkatsoft.com/download/9.5.0.46/chilkat-9.5.0-python-2.7-x86_64-linux.tar.gz \
+mkdir -p /tmp/chilkat && \
+	wget -qO- http://www.chilkatsoft.com/download/9.5.0.46/chilkat-9.5.0-python-2.7-x86_64-linux.tar.gz \
     | tar xfvz - -C /tmp/chilkat/ && \
     find /tmp/chilkat -type f -exec mv -i "{}" /usr/lib/python2.7/ \; && \
     rm -rf /tmp/chilkat
